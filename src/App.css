@@ -78,9 +78,11 @@ div.container {
 }
 
 div.Suwasariya {
-  padding: 5em;
-  background: linear-gradient(135deg, #6b73ff, #000dff);
-  text-align: left;
+  padding: 0.8em;
+  font: weight 700;
+  color: #151518;
+  background:#f1f2f6;
+  text-align: center;
   justify-content: center;
 }
 
@@ -99,6 +101,13 @@ div.Suwasariya {
   margin-left: 15em;
   padding: 20px;
 }
+
+.SectionLabel {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 150px;
+  text-align: center;
+}
+
 
 @media screen and (min-width: 600px) {
   .Flex {

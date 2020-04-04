@@ -8,7 +8,7 @@ import CardPink from "../Cards/CardPink";
 import CardPurple from "../Cards/CardPurple";
 import CardRed from "../Cards/CardRed";
 import CardYellow from "../Cards/CardYellow";
-import GlobalData from './Global';
+import GlobalData from "./Global";
 class LocalData extends React.Component {
   state = {
     cases: 0,
@@ -43,23 +43,32 @@ class LocalData extends React.Component {
     return (
       <div>
         <div className="App">
-        <div className="Title">
-          <h1>
-            <b>Covid19</b> : Live Situational Dashboard
-          </h1>
+          <div className="Title">
+            <h1>
+              <b>Covid19</b> : Live Situational Dashboard
+            </h1>
+          </div>
+          <h3 className="DnT">{this.state.date}</h3>
+          {/* label */}
+          <div class="SectionLabel">
+            <div class="container">
+              <h4>
+                <b>Local Data</b>
+              </h4>
+            </div>
+          </div>
+          {/* label */}
+          <div className="Flex">
+            <CardYellow value={this.state.cases} text="Total Cases" />
+            <CardRed value={this.state.active_cases} text="Active Cases" />
+            <CardBlue value={this.state.new_cases} text="New Cases" />
+            <CardPurple value={this.state.hospitalized} text="Hospitalized" />
+            <CardGreen value={this.state.recoveries} text="Recoveries" />
+            <CardPink value={this.state.deaths} text="Deaths" />
+          </div>
         </div>
-        <h3 className="DnT">{this.state.date}</h3>
-        {/* <h1>local</h1> */}
-        <div className="Flex">
-          <CardYellow value={this.state.cases} text="Total Cases" />
-          <CardRed value={this.state.active_cases} text="Active Cases" />
-          <CardBlue value={this.state.new_cases} text="New Cases" />
-          <CardPurple value={this.state.hospitalized} text="Hospitalized" />
-          <CardGreen value={this.state.recoveries} text="Recoveries" />
-          <CardPink value={this.state.deaths} text="Deaths" />
-        </div>
-      </div>
-      <GlobalData/>
+        {/* <GlobalData /> */}
+        
       </div>
     );
   }

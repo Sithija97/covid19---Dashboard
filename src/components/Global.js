@@ -37,7 +37,15 @@ class GlobalData extends React.Component {
     return (
       <div>
         <div className="App">
-          {/* <h1>global</h1> */}
+          {/* label */}
+          <div class="SectionLabel">
+            <div class="container">
+              <h4>
+                <b>Global Data</b>
+              </h4>
+            </div>
+          </div>
+          {/* label */}
           <div className="Flex">
             <Cards value={this.state.gcases} text="Total Cases" />
             <Cards value={this.state.gnew_cases} text="New Cases" />
