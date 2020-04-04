@@ -10,11 +10,12 @@ h3 {
 .App {
   padding: 1em;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   background: #f2f4f5;
 }
 
 .Title {
+  text-align: center;
   padding: 0.5em;
   padding-bottom: 1em;
   background: #fff;
@@ -22,7 +23,9 @@ h3 {
   box-shadow: 0 1px 2px 0 rgba(228, 226, 226, 0.904),
     0 2px 4px 0 rgba(212, 212, 212, 0.05);
 }
-
+.DnT {
+  text-align: center;
+}
 .Flex {
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +67,7 @@ div.card {
 }
 
 div.header {
-  background-color: #8e44ad;
+  background-color: #0c2461;
   color: white;
   padding: 10px;
   font-size: 40px;
@@ -76,26 +79,25 @@ div.container {
 
 div.Suwasariya {
   padding: 5em;
-  background: linear-gradient(135deg,#6B73FF,#000DFF);
+  background: linear-gradient(135deg, #6b73ff, #000dff);
   text-align: left;
   justify-content: center;
 }
 
-.sectionH1{
+.sectionH1 {
   font-size: 4em;
   color: #f1f2f6;
 }
 
-.sectionH2{
+.sectionH2 {
   font-size: 2em;
 }
 
-.covidImg{
+.covidImg {
   height: 270px;
   width: 1000px;
-  margin-left:15em;
+  margin-left: 15em;
   padding: 20px;
-
 }
 
 @media screen and (min-width: 600px) {

@@ -1,7 +1,6 @@
 import React from "react";
 import "../App.css";
 import Axios from "axios";
-
 //components
 import CardBlue from "../Cards/CardBlue";
 import CardGreen from "../Cards/CardGreen";
@@ -9,7 +8,7 @@ import CardPink from "../Cards/CardPink";
 import CardPurple from "../Cards/CardPurple";
 import CardRed from "../Cards/CardRed";
 import CardYellow from "../Cards/CardYellow";
-
+import GlobalData from './Global';
 class LocalData extends React.Component {
   state = {
     cases: 0,
@@ -18,7 +17,7 @@ class LocalData extends React.Component {
     hospitalized: 0,
     recoveries: 0,
     deaths: 0,
-    date: "2020-03-17 | 08:14:26"
+    date: "2020-03-17 | 08:14:26",
   };
 
   componentDidMount() {
@@ -37,21 +36,20 @@ class LocalData extends React.Component {
       recoveries: response.data.data.local_recovered,
       hospitalized:
         response.data.data.local_total_number_of_individuals_in_hospitals,
-      date: response.data.data.update_date_time
+      date: response.data.data.update_date_time,
     });
   }
   render() {
     return (
-      <div className="App">
+      <div>
+        <div className="App">
         <div className="Title">
           <h1>
             <b>Covid19</b> : Live Situational Dashboard
           </h1>
         </div>
-        <div className="Title">
-          <h3>{this.state.date}</h3>
-        </div>
-
+        <h3 className="DnT">{this.state.date}</h3>
+        {/* <h1>local</h1> */}
         <div className="Flex">
           <CardYellow value={this.state.cases} text="Total Cases" />
           <CardRed value={this.state.active_cases} text="Active Cases" />
@@ -60,7 +58,8 @@ class LocalData extends React.Component {
           <CardGreen value={this.state.recoveries} text="Recoveries" />
           <CardPink value={this.state.deaths} text="Deaths" />
         </div>
-        
+      </div>
+      <GlobalData/>
       </div>
     );
   }
