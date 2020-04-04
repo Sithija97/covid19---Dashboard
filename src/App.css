@@ -1,38 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  color: #7f8c8d;
+}
 .App {
+  padding: 1em;
+  width: 100%;
   text-align: center;
+  background: #f2f4f5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Title {
+  padding: 0.5em;
+  padding-bottom: 1em;
+  background: #fff;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 2px 0 rgba(228, 226, 226, 0.904),
+    0 2px 4px 0 rgba(212, 212, 212, 0.05);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* padding-top: 1em; */
+}
+
+.Card {
+  padding: 1em;
+  margin: 1em;
+  border-radius: 1em;
+  width: 100%;
+}
+
+.Label {
+  background: #0052d4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6fb1fc,
+    #4364f7,
+    #0052d4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 20em;
+}
+
+div.card {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  margin: 1em;
+  border-radius: 0.5em;
+}
+
+div.header {
+  background-color: #8e44ad;
   color: white;
+  padding: 10px;
+  font-size: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+div.container {
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+div.Suwasariya {
+  padding: 5em;
+  background: linear-gradient(135deg,#6B73FF,#000DFF);
+  text-align: left;
+  justify-content: center;
+}
+
+.sectionH1{
+  font-size: 4em;
+  color: #f1f2f6;
+}
+
+.sectionH2{
+  font-size: 2em;
+}
+
+.covidImg{
+  height: 270px;
+  width: 1000px;
+  margin-left:15em;
+  padding: 20px;
+
+}
+
+@media screen and (min-width: 600px) {
+  .Flex {
+    flex-wrap: nowrap;
   }
 }
