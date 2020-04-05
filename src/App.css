@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 h3 {
@@ -11,10 +12,11 @@ h3 {
   padding: 1em;
   width: 100%;
   /* text-align: center; */
-  background: #f2f4f5;
+  background: #f1f2f6;
 }
 
 .Title {
+ 
   text-align: center;
   padding: 0.5em;
   padding-bottom: 1em;
@@ -84,6 +86,7 @@ div.Suwasariya {
   background:#f1f2f6;
   text-align: center;
   justify-content: center;
+  /* margin-top: 4em; */
 }
 
 .sectionH1 {
@@ -107,6 +110,42 @@ div.Suwasariya {
   width: 150px;
   text-align: center;
 }
+
+/* article */
+.ArticleCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  padding: 12px;
+  border-radius: 0.5em;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.ArticleCard  button {
+  border: none;
+  /* outline: 0; */
+  padding: 12px;
+  color: white;
+  background-color: #34495E;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  opacity: 0.2;
+  border-radius: 1em;
+}
+
+.ArticleCard button:hover {
+  opacity: 0.7;
+}
+/* article */
 
 
 @media screen and (min-width: 600px) {

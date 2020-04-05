@@ -8,7 +8,8 @@ import CardPink from "../Cards/CardPink";
 import CardPurple from "../Cards/CardPurple";
 import CardRed from "../Cards/CardRed";
 import CardYellow from "../Cards/CardYellow";
-import GlobalData from "./Global";
+
+import Logo from "./logo.png";
 class LocalData extends React.Component {
   state = {
     cases: 0,
@@ -44,9 +45,7 @@ class LocalData extends React.Component {
       <div>
         <div className="App">
           <div className="Title">
-            <h1>
-              <b>Covid19</b> : Live Situational Dashboard
-            </h1>
+            <h1>Covid19 : Live Situational Dashboard</h1>
           </div>
           <h3 className="DnT">{this.state.date}</h3>
           {/* label */}
@@ -68,7 +67,6 @@ class LocalData extends React.Component {
           </div>
         </div>
         {/* <GlobalData /> */}
-        
       </div>
     );
   }
